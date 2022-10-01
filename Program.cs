@@ -1,27 +1,18 @@
-﻿// Напишите программу, которая принимает на вход
-//  три числа и выдаёт максимальное из этих чисел.
-// 2, 3, 7 -> 7
-// 44 5 78 -> 78
-// 22 3 9 -> 22
+﻿// Напишите программу, которая на вход принимает 
+// число и выдаёт, является ли число чётным 
+// (делится ли оно на два без остатка).
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
 
-Console.WriteLine ("Введите первое число");
+Console.WriteLine ("Введите целое число");
 int numberA = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine ("Введите второе число");
-int numberB = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine ("Введите третье число");
-int numberC = Convert.ToInt32(Console.ReadLine());
-
-if (numberA > numberB && numberA > numberC)
+if (numberA % 2 == 0)
 {
-    Console.WriteLine ("Максимальное число" + " " + numberA);
+    Console.WriteLine("Да");
 }
-else if (numberB > numberA && numberB > numberC)
+else
 {
-    Console.WriteLine ("Максимальное число" + " " + numberB);
-}
-else if (numberC > numberA && numberC > numberB)
-{
-    Console.WriteLine ("Максимальное число" + " " + numberC);
+    Console.WriteLine ("Нет");
 }
