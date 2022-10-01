@@ -1,18 +1,20 @@
 ﻿// Напишите программу, которая на вход принимает 
-// число и выдаёт, является ли число чётным 
-// (делится ли оно на два без остатка).
-// 4 -> да
-// -3 -> нет
-// 7 -> нет
+// два числа и выдаёт, какое число большее, а какое меньшее.
+// a = 5; b = 7 -> max = 7
+// a = 2 b = 10 -> max = 10
+// a = -9 b = -3 -> max = -3
 
-Console.WriteLine ("Введите целое число");
+Console.WriteLine ("Введите первое число");
 int numberA = Convert.ToInt32(Console.ReadLine());
 
-if (numberA % 2 == 0)
+Console.WriteLine ("Введите второе число");
+int numberB = Convert.ToInt32(Console.ReadLine());
+
+if (numberA > numberB)
 {
-    Console.WriteLine("Да");
+    Console.WriteLine ("Максимальное число" +" " + numberA);
 }
 else
 {
-    Console.WriteLine ("Нет");
+    Console.WriteLine ("Максимальное число" + " " + numberB);
 }
